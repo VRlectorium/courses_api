@@ -4,7 +4,7 @@ services:
     container_name: horum_course-api
     build: ./courses-api
     volumes:
-      - './courses-api:/usr/src/app'
+      - './courses-api:/usr/src'
       - './courses-api/package.json:/usr/src/package.json'
     ports:
       - '3000:3000'
