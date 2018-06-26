@@ -12,6 +12,7 @@ services:
       - YANDEX_API=${YANDEX_API}
       - PORT=3000
       - DB_CONNECT_DEV=${DB_CONNECT_DEV}
+      - DB_CONNECT_TEST=${DB_CONNECT_TEST}
       - NODE_ENV=${NODE_ENV}
     depends_on:
       courses-db:
