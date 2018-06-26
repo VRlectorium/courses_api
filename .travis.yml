@@ -1,0 +1,13 @@
+sudo: required
+services:
+  - docker
+
+before-script:
+  - export NODE_ENV=test
+  - docker-compose up --build -d
+
+script:
+  - docker-compose run courses-api npm test
+
+after-script:
+  - docker-compose down
