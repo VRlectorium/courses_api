@@ -6,7 +6,7 @@
     "dev": "npm-run-all -p gulp dev:server",
     "gulp": "gulp --gulpfile gulpfile.js",
     "dev:server": "nodemon dist/index.js",
-    "test": "mocha --reporter spec --compilers ts:ts-node/register 'test/**/*.test.ts'",
+    "test": "./node_modules/mocha/bin/_mocha --reporter spec --compilers ts:ts-node/register 'test/**/*.test.ts'",
     "build": "gulp scripts"
   },
   "author": "",
