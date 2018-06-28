@@ -5,7 +5,7 @@ services:
     build: ./courses-api
     volumes:
       - './courses-api:/usr/src/app'
-      - './courses-api/package.json:/usr/src/package.json'
+      - './courses-api/package.json:/usr/src/app/package.json'
     ports:
       - '3000:3000'
     environment:
