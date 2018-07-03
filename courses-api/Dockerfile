@@ -2,7 +2,9 @@ FROM node:alpine
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+COPY package*.json .
+
 RUN npm install
 
 COPY . .
