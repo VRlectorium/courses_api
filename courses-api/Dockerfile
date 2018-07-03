@@ -3,9 +3,7 @@ FROM node:alpine
 WORKDIR /usr/src/app
 
 COPY package*.json ./
-RUN npm install -g mocha
-RUN npm install ts-node/register
-RUN npm install
+RUN npm install mocha chai ts-node -g
 
 COPY . .
 
